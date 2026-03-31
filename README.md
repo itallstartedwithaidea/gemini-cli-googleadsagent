@@ -1,16 +1,26 @@
 # Gemini CLI + Google Ads Agent
 
-> **Google Ads management commands and skills for
-> [Gemini CLI](https://github.com/google-gemini/gemini-cli).** Analyze
-> campaigns, audit accounts, and optimize performance — all from your terminal.
+> **Open-source Google Ads management commands and AI agent skills for
+> [Gemini CLI](https://github.com/google-gemini/gemini-cli).** Analyze campaign
+> performance, audit accounts, optimize PPC spend, and generate GAQL queries —
+> all from your terminal.
 
 [![License](https://img.shields.io/github/license/google-gemini/gemini-cli)](https://github.com/google-gemini/gemini-cli/blob/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@google/gemini-cli)](https://www.npmjs.com/package/@google/gemini-cli)
+[![Wiki](https://img.shields.io/badge/docs-Wiki-blue)](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki)
+[![Advertising Hub](https://img.shields.io/badge/ecosystem-Advertising%20Hub-orange)](https://github.com/itallstartedwithaidea/advertising-hub)
+[![googleadsagent.ai](https://img.shields.io/badge/site-googleadsagent.ai-green)](https://googleadsagent.ai)
 
 **Part of the
-[Advertising Hub](https://github.com/itallstartedwithaidea/advertising-hub)** |
+[Advertising Hub](https://github.com/itallstartedwithaidea/advertising-hub)
+ecosystem** — 14 ad platform APIs, 25+ AI agents, MCP servers |
 [googleadsagent.ai](https://googleadsagent.ai) |
 [MiniAgent](https://github.com/itallstartedwithaidea/MiniAgent)
+
+**Keywords:** Google Ads API, Google Ads automation, PPC management, campaign
+analysis, GAQL queries, account audit, bid optimization, ad creative testing,
+Performance Max, Google Ads scripts, AI advertising agent, Gemini CLI
+extensions, digital marketing AI, paid media tools
 
 ---
 
@@ -95,6 +105,24 @@ cp -r gemini-cli-googleadsagent/.gemini/skills/google-ads-agent/ your-project/.g
 | [**google-ads-skills**](https://github.com/itallstartedwithaidea/google-ads-skills)                   | Claude Code / Codex / Gemini CLI skills for Google Ads         |
 | [**MiniAgent**](https://github.com/itallstartedwithaidea/MiniAgent)                                   | Trainable 26M-param advertising AI + 14 MCP servers            |
 | [**google-ads-claudecodeskill**](https://github.com/itallstartedwithaidea/google-ads-claudecodeskill) | Claude Code skill for Google Ads management                    |
+
+---
+
+## Documentation
+
+Full documentation is available on the
+**[Wiki](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki)**:
+
+- [Getting Started](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Getting-Started)
+  — Installation, authentication, first run
+- [Commands Reference](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Commands-Reference)
+  — Full docs for all three commands with examples
+- [Google Ads Agent Skill](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Google-Ads-Agent-Skill)
+  — GAQL patterns, API v22 knowledge, write safety
+- [Configuration](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Configuration)
+  — Settings, env variables, model selection
+- [Related Projects](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Related-Projects)
+  — Full ecosystem overview
 
 ---
 
@@ -486,5 +514,6 @@ instructions.
 ---
 
 <p align="center">
-  Built with ❤️ by Google and the open source community
+  Upstream: Built with ❤️ by Google and the open source community<br>
+  Google Ads extensions by <a href="https://github.com/itallstartedwithaidea">John Williams</a> — Team Lead, Paid Media @ Seer Interactive | <a href="https://googleadsagent.ai">googleadsagent.ai</a>
 </p>
