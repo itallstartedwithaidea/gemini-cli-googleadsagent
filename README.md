@@ -1,18 +1,115 @@
-# Gemini CLI
+# Gemini CLI + Google Ads Agent
 
-[![Gemini CLI CI](https://github.com/google-gemini/gemini-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/google-gemini/gemini-cli/actions/workflows/ci.yml)
-[![Gemini CLI E2E (Chained)](https://github.com/google-gemini/gemini-cli/actions/workflows/chained_e2e.yml/badge.svg)](https://github.com/google-gemini/gemini-cli/actions/workflows/chained_e2e.yml)
-[![Version](https://img.shields.io/npm/v/@google/gemini-cli)](https://www.npmjs.com/package/@google/gemini-cli)
+> **Google Ads management commands and skills for
+> [Gemini CLI](https://github.com/google-gemini/gemini-cli).** Analyze
+> campaigns, audit accounts, and optimize performance — all from your terminal.
+
 [![License](https://img.shields.io/github/license/google-gemini/gemini-cli)](https://github.com/google-gemini/gemini-cli/blob/main/LICENSE)
-[![View Code Wiki](https://assets.codewiki.google/readme-badge/static.svg)](https://codewiki.google/github.com/google-gemini/gemini-cli?utm_source=badge&utm_medium=github&utm_campaign=github.com/google-gemini/gemini-cli)
+[![Version](https://img.shields.io/npm/v/@google/gemini-cli)](https://www.npmjs.com/package/@google/gemini-cli)
 
-![Gemini CLI Screenshot](./docs/assets/gemini-screenshot.png)
+**Part of the
+[Advertising Hub](https://github.com/itallstartedwithaidea/advertising-hub)** |
+[googleadsagent.ai](https://googleadsagent.ai) |
+[MiniAgent](https://github.com/itallstartedwithaidea/MiniAgent)
+
+---
+
+## Google Ads Commands
+
+This fork extends Gemini CLI with three Google Ads slash commands and a
+domain-specific agent skill.
+
+### `/google-ads-analyze` — Campaign Performance Analysis
+
+```
+/google-ads-analyze Show me top spending campaigns last 30 days with declining ROAS
+```
+
+- Suggests relevant GAQL queries to pull the data
+- Presents findings in clear tables
+- Identifies anomalies and opportunities
+- Recommends specific, actionable next steps
+
+### `/google-ads-audit` — Comprehensive Account Audit
+
+```
+/google-ads-audit Full audit of the Hopeworks nonprofit account
+```
+
+Covers 7 audit areas with severity ratings (Critical / High / Medium / Low):
+
+- Account structure, bidding strategy, budget allocation
+- Keyword health, ad creative, targeting, conversion tracking
+
+### `/google-ads-optimize` — Optimization Recommendations
+
+```
+/google-ads-optimize We need to reduce CPA by 15% without losing volume
+```
+
+- Identifies top 3-5 highest-impact optimization opportunities
+- Prioritizes by effort vs. impact with risk levels
+- Covers wasted spend, bid efficiency, creative fatigue, and targeting gaps
+
+### Google Ads Agent Skill
+
+The included skill (`.gemini/skills/google-ads-agent/`) activates automatically
+for any advertising-related question. It provides:
+
+- **GAQL expertise** — knows Google Ads Query Language syntax, common patterns,
+  and cost micro conversion
+- **API v22 knowledge** — current API version, auth patterns, rate limits
+- **Campaign analysis** — trends, anomalies, underperformers, budget allocation
+- **Write safety** — always presents proposed changes before execution
+
+## Quick Start
+
+```bash
+# Clone this repo
+git clone https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent.git
+cd gemini-cli-googleadsagent
+
+# Install and build
+npm install
+npm run build
+
+# Run (will prompt for Google sign-in on first use)
+npm start
+```
+
+Or use the commands/skills in any project by copying the `.gemini/` directory:
+
+```bash
+# Copy Google Ads commands + skills to your own project
+cp -r gemini-cli-googleadsagent/.gemini/commands/google-ads-*.toml your-project/.gemini/commands/
+cp -r gemini-cli-googleadsagent/.gemini/skills/google-ads-agent/ your-project/.gemini/skills/
+```
+
+## Related Projects
+
+| Project                                                                                               | Description                                                    |
+| ----------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| [**advertising-hub**](https://github.com/itallstartedwithaidea/advertising-hub)                       | One-stop shop for 14 ad platform APIs, MCP servers, and agents |
+| [**google-ads-api-agent**](https://github.com/itallstartedwithaidea/google-ads-api-agent)             | Enterprise Google Ads agent — 28 API actions, live read/write  |
+| [**google-ads-mcp**](https://github.com/itallstartedwithaidea/google-ads-mcp)                         | MCP server for Google Ads API access                           |
+| [**google-ads-skills**](https://github.com/itallstartedwithaidea/google-ads-skills)                   | Claude Code / Codex / Gemini CLI skills for Google Ads         |
+| [**MiniAgent**](https://github.com/itallstartedwithaidea/MiniAgent)                                   | Trainable 26M-param advertising AI + 14 MCP servers            |
+| [**google-ads-claudecodeskill**](https://github.com/itallstartedwithaidea/google-ads-claudecodeskill) | Claude Code skill for Google Ads management                    |
+
+---
+
+## About Gemini CLI (Upstream)
+
+This is a fork of
+[google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) with
+Google Ads-specific extensions.
 
 Gemini CLI is an open-source AI agent that brings the power of Gemini directly
 into your terminal. It provides lightweight access to Gemini, giving you the
 most direct path from your prompt to our model.
 
-Learn all about Gemini CLI in our [documentation](https://geminicli.com/docs/).
+Learn all about Gemini CLI in the
+[official documentation](https://geminicli.com/docs/).
 
 ## 🚀 Why Gemini CLI?
 
