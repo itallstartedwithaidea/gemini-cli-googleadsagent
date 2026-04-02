@@ -17,10 +17,20 @@ ecosystem** — 14 ad platform APIs, 25+ AI agents, MCP servers |
 [googleadsagent.ai](https://googleadsagent.ai) |
 [MiniAgent](https://github.com/itallstartedwithaidea/MiniAgent)
 
-**Keywords:** Google Ads API, Google Ads automation, PPC management, campaign
-analysis, GAQL queries, account audit, bid optimization, ad creative testing,
-Performance Max, Google Ads scripts, AI advertising agent, Gemini CLI
-extensions, digital marketing AI, paid media tools
+---
+
+## Which Tool Do You Need?
+
+| I use...                      | Install this                                                                                                                                                | Setup time |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| **Gemini CLI** (terminal)     | [google-ads-gemini-extension](https://github.com/itallstartedwithaidea/google-ads-gemini-extension)                                                         | ~15 min    |
+| **Claude** (Desktop or Code)  | [google-ads-skills](https://github.com/itallstartedwithaidea/google-ads-skills) + [google-ads-mcp](https://github.com/itallstartedwithaidea/google-ads-mcp) | ~15 min    |
+| **Cursor / Windsurf / Other** | [google-ads-mcp](https://github.com/itallstartedwithaidea/google-ads-mcp) (Python, 29 tools)                                                                | ~15 min    |
+| **Just want it managed**      | [googleadsagent.ai](https://googleadsagent.ai) — no setup needed                                                                                            | 0 min      |
+
+> **Step-by-step setup guide with screenshots:**
+> **[googleadsagent.ai/setup](https://googleadsagent.ai/setup/)** — covers every
+> path, every credential, every gotcha. No engineering degree required.
 
 ---
 
@@ -72,25 +82,44 @@ for any advertising-related question. It provides:
 - **Campaign analysis** — trends, anomalies, underperformers, budget allocation
 - **Write safety** — always presents proposed changes before execution
 
-## Quick Start
+## Quick Start — I Just Want to Use It
+
+Most users want this path. Three commands, ~15 minutes:
 
 ```bash
-# Clone this repo
+# 1. Install Gemini CLI
+npm install -g @google/gemini-cli
+
+# 2. Install the Google Ads extension (MCP server + commands + skills)
+gemini extensions install https://github.com/itallstartedwithaidea/google-ads-gemini-extension
+
+# 3. Enter your Google Ads credentials (one-time setup)
+gemini extensions config google-ads-agent
+
+# 4. Start using it
+gemini
+> Show me my Google Ads accounts
+```
+
+You need 5 credential values from Google Ads, Google Cloud Console, and OAuth
+Playground. The **[full setup guide](https://googleadsagent.ai/setup/)** walks
+through every step with screenshots.
+
+### Quick Start — I Want to Contribute / Develop
+
+If you want to modify the CLI itself (not just use the extension):
+
+```bash
 git clone https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent.git
 cd gemini-cli-googleadsagent
-
-# Install and build
 npm install
 npm run build
-
-# Run (will prompt for Google sign-in on first use)
 npm start
 ```
 
-Or use the commands/skills in any project by copying the `.gemini/` directory:
+Or copy just the Google Ads commands/skills to any project:
 
 ```bash
-# Copy Google Ads commands + skills to your own project
 cp -r gemini-cli-googleadsagent/.gemini/commands/google-ads-*.toml your-project/.gemini/commands/
 cp -r gemini-cli-googleadsagent/.gemini/skills/google-ads-agent/ your-project/.gemini/skills/
 ```
