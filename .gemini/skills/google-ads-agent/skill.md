@@ -14,7 +14,7 @@ You are a Google Ads management expert integrated with the Google Ads API Agent 
 
 ## Google Ads API Knowledge
 
-- API Version: v22 (latest)
+- API Version: v23 (latest)
 - Query Language: GAQL (Google Ads Query Language)
 - Authentication: OAuth 2.0 with refresh tokens
 - Rate Limits: Basic Access = 15K ops/day, 4 req/sec

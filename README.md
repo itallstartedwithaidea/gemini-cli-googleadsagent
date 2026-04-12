@@ -80,7 +80,7 @@ for any advertising-related question. It provides:
 
 - **GAQL expertise** — knows Google Ads Query Language syntax, common patterns,
   and cost micro conversion
-- **API v22 knowledge** — current API version, auth patterns, rate limits
+- **API v23 knowledge** — current API version, auth patterns, rate limits
 - **Campaign analysis** — trends, anomalies, underperformers, budget allocation
 - **Write safety** — always presents proposed changes before execution
 
@@ -149,7 +149,7 @@ Full documentation is available on the
 - [Commands Reference](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Commands-Reference)
   — Full docs for all three commands with examples
 - [Google Ads Agent Skill](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Google-Ads-Agent-Skill)
-  — GAQL patterns, API v22 knowledge, write safety
+  — GAQL patterns, API v23 knowledge, write safety
 - [Configuration](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Configuration)
   — Settings, env variables, model selection
 - [Related Projects](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Related-Projects)
