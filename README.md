@@ -36,10 +36,36 @@ ecosystem** — 14 ad platform APIs, 25+ AI agents, MCP servers |
 
 ---
 
-## Google Ads Commands
+## Companion Extension — `google-ads-gemini-extension` v2.3
+
+For live Google Ads API access (MCP server, 26 tools including write
+operations), pair this CLI fork with the
+[**google-ads-gemini-extension**](https://github.com/itallstartedwithaidea/google-ads-gemini-extension):
+
+```bash
+gemini extensions install https://github.com/itallstartedwithaidea/google-ads-gemini-extension
+```
+
+**v2.3 adds one-command browser sign-in.** After installing, run
+`/google-ads:login` — your browser opens, you pick any Google account with
+Google Ads access, approve, and you're signed in. No copy-pasting session IDs,
+no OAuth Playground, no manual `.env` editing. Refresh tokens live in your OS
+keychain. Multiple identities supported with `/google-ads:status`,
+`/google-ads:switch <email>`, `/google-ads:logout`.
+
+Full details in the
+[extension README](https://github.com/itallstartedwithaidea/google-ads-gemini-extension#step-5-sign-in-30-seconds-any-google-account)
+and
+[CHANGELOG](https://github.com/itallstartedwithaidea/google-ads-gemini-extension/blob/main/CHANGELOG.md).
+
+---
+
+## Google Ads Commands (this repo)
 
 This fork extends Gemini CLI with three Google Ads slash commands and a
-domain-specific agent skill.
+domain-specific agent skill. These are **prompt-only** — they provide expert
+framing for the model but do not make live API calls on their own. For live API
+access install the companion extension above.
 
 ### `/google-ads-analyze` — Campaign Performance Analysis
 
