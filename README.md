@@ -24,7 +24,7 @@ extensions, digital marketing AI, paid media tools
 
 ---
 
-## Companion Extension — `google-ads-gemini-extension` v2.4
+## Companion Extension — `google-ads-gemini-extension` v2.4.1
 
 For live Google Ads API access (MCP server, 26 tools including write
 operations), pair this CLI fork with the
@@ -34,19 +34,26 @@ operations), pair this CLI fork with the
 gemini extensions install https://github.com/itallstartedwithaidea/google-ads-gemini-extension
 ```
 
-**v2.4 ships zero-setup sign-in.** After installing, run `/google-ads:login` —
-your browser opens the `googleadsagent.ai` consent flow (powered by its
-already-verified OAuth client), you pick any Google account with Google Ads
-access, approve, and you're signed in. **No Google Cloud Console, no client IDs,
-no refresh tokens on the CLI.** Only an opaque session id is stored locally in
-your OS keychain. Multiple identities are still supported with
-`/google-ads:status`, `/google-ads:switch <email>`, `/google-ads:logout`. v2.3
-users auto-upgrade on next login.
+**v2.4.1 ships zero-setup sign-in.** After installing, run `/google-ads:login` —
+your browser opens to [googleadsagent.ai](https://googleadsagent.ai), you pick
+any Google account with Google Ads access, approve, and you're signed in. No
+Cloud Console setup, no client IDs, no secrets ever touch the CLI. The Google
+refresh token stays encrypted on the site; only an opaque session id is stored
+locally (OS keychain when available). Multiple identities supported with
+`/google-ads:status`, `/google-ads:switch <email>`, `/google-ads:logout`.
 
 Full details in the
-[extension README](https://github.com/itallstartedwithaidea/google-ads-gemini-extension#step-5-sign-in-30-seconds-any-google-account)
+[extension README](https://github.com/itallstartedwithaidea/google-ads-gemini-extension#readme)
 and
-[CHANGELOG](https://github.com/itallstartedwithaidea/google-ads-gemini-extension/blob/main/CHANGELOG.md#240--2026-04-16).
+[CHANGELOG](https://github.com/itallstartedwithaidea/google-ads-gemini-extension/blob/main/CHANGELOG.md).
+
+### Troubleshooting sign-in
+
+| Symptom                                                                             | Fix                                                                                                                                                          |
+| ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `Error 400: redirect_uri_mismatch` with `http://127.0.0.1:<port>/callback`          | Your Gemini session started before v2.4 landed on disk. Run `/quit`, then `gemini` again — the MCP server reloads with the proxy flow.                       |
+| `Sign-in timed out after 120s`                                                      | Browser didn't open or you didn't complete consent in time. Re-run `/google-ads:login` — the CLI also prints the URL you can paste manually.                 |
+| `Access blocked: This app's request is invalid` with a `googleadsagent.ai` redirect | Your Google account isn't on the OAuth consent screen's "Test users" list for this project. Ask the project owner to add you, or use a pre-approved account. |
 
 ---
 
