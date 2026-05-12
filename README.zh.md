@@ -1,32 +1,37 @@
 # Gemini CLI + Google Ads Agent
 
-[English](README.md) | [Français](README.fr.md) | [Español](README.es.md) | [中文](README.zh.md) | [Nederlands](README.nl.md) | [Русский](README.ru.md) | [한국어](README.ko.md)
+[English](README.md) | [Français](README.fr.md) | [Español](README.es.md) |
+[中文](README.zh.md) | [Nederlands](README.nl.md) | [Русский](README.ru.md) |
+[한국어](README.ko.md)
 
-> **面向 [Gemini CLI](https://github.com/google-gemini/gemini-cli) 的开源 Google Ads 管理命令和 AI 代理技能。** 分析广告系列效果、审计账户、优化 PPC 支出、生成 GAQL 查询 — 一切在终端中完成。
+> **面向 [Gemini CLI](https://github.com/google-gemini/gemini-cli) 的开源 Google
+> Ads 管理命令和 AI 代理技能。**
+> 分析广告系列效果、审计账户、优化 PPC 支出、生成 GAQL 查询 — 一切在终端中完成。
 
 [![License](https://img.shields.io/github/license/google-gemini/gemini-cli)](https://github.com/google-gemini/gemini-cli/blob/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@google/gemini-cli)](https://www.npmjs.com/package/@google/gemini-cli)
 [![Wiki](https://img.shields.io/badge/docs-Wiki-blue)](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki)
 [![Advertising Hub](https://img.shields.io/badge/ecosystem-Advertising%20Hub-orange)](https://github.com/itallstartedwithaidea/advertising-hub)
-[![googleadsagent.ai](https://img.shields.io/badge/site-googleadsagent.ai-green)](https://googleadsagent.ai)
+[![ahmeego.com](https://img.shields.io/badge/site-ahmeego.com-green)](https://ahmeego.com)
 
-**[Advertising Hub](https://github.com/itallstartedwithaidea/advertising-hub) 生态系统的一部分** — 14 个广告平台 API、25+ AI 代理、MCP 服务器 |
-[googleadsagent.ai](https://googleadsagent.ai) |
+**[Advertising Hub](https://github.com/itallstartedwithaidea/advertising-hub)
+生态系统的一部分** — 14 个广告平台 API、25+ AI 代理、MCP 服务器 |
+[ahmeego.com](https://ahmeego.com) |
 [MiniAgent](https://github.com/itallstartedwithaidea/MiniAgent)
 
 ---
 
 ## 你需要哪个工具？
 
-| 我使用...                    | 安装这个                                                                                                                                                    | 配置时间 |
-| ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| **Gemini CLI**（终端）       | [google-ads-gemini-extension](https://github.com/itallstartedwithaidea/google-ads-gemini-extension)                                                         | ~15 分钟 |
-| **Claude**（Desktop 或 Code）| [google-ads-skills](https://github.com/itallstartedwithaidea/google-ads-skills) + [google-ads-mcp](https://github.com/itallstartedwithaidea/google-ads-mcp) | ~15 分钟 |
-| **Cursor / Windsurf / 其他** | [google-ads-mcp](https://github.com/itallstartedwithaidea/google-ads-mcp)（Python，29 个工具）                                                               | ~15 分钟 |
-| **我只想要托管服务**         | [googleadsagent.ai](https://googleadsagent.ai) — 无需配置                                                                                                   | 0 分钟   |
+| 我使用...                     | 安装这个                                                                                                                                                    | 配置时间 |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| **Gemini CLI**（终端）        | [google-ads-gemini-extension](https://github.com/itallstartedwithaidea/google-ads-gemini-extension)                                                         | ~15 分钟 |
+| **Claude**（Desktop 或 Code） | [google-ads-skills](https://github.com/itallstartedwithaidea/google-ads-skills) + [google-ads-mcp](https://github.com/itallstartedwithaidea/google-ads-mcp) | ~15 分钟 |
+| **Cursor / Windsurf / 其他**  | [google-ads-mcp](https://github.com/itallstartedwithaidea/google-ads-mcp)（Python，29 个工具）                                                              | ~15 分钟 |
+| **我只想要托管服务**          | [ahmeego.com](https://ahmeego.com) — 无需配置                                                                                                               | 0 分钟   |
 
-> **带截图的分步配置指南：**
-> **[googleadsagent.ai/setup](https://googleadsagent.ai/setup/)** — 涵盖每个路径、每个凭据、每个注意事项。无需工程学位。
+> **带截图的分步配置指南：** **[ahmeego.com/setup](https://ahmeego.com/setup/)**
+> — 涵盖每个路径、每个凭据、每个注意事项。无需工程学位。
 
 ---
 
@@ -94,7 +99,9 @@ gemini
 > Show me my Google Ads accounts
 ```
 
-你需要来自 Google Ads、Google Cloud Console 和 OAuth Playground 的 5 个凭据值。**[完整配置指南](https://googleadsagent.ai/setup/)** 附带截图详细说明每个步骤。
+你需要来自 Google Ads、Google Cloud Console 和 OAuth
+Playground 的 5 个凭据值。**[完整配置指南](https://ahmeego.com/setup/)**
+附带截图详细说明每个步骤。
 
 ### 快速开始 — 我想贡献 / 开发
 
@@ -117,34 +124,43 @@ cp -r gemini-cli-googleadsagent/.gemini/skills/google-ads-agent/ your-project/.g
 
 ## 相关项目
 
-| 项目                                                                                                  | 描述                                                        |
-| ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| [**advertising-hub**](https://github.com/itallstartedwithaidea/advertising-hub)                       | 14 个广告平台 API、MCP 服务器和代理的一站式中心             |
-| [**google-ads-api-agent**](https://github.com/itallstartedwithaidea/google-ads-api-agent)             | 企业级 Google Ads 代理 — 28 个 API 操作，实时读写           |
-| [**google-ads-mcp**](https://github.com/itallstartedwithaidea/google-ads-mcp)                         | Google Ads API 访问的 MCP 服务器                            |
-| [**google-ads-skills**](https://github.com/itallstartedwithaidea/google-ads-skills)                   | Claude Code / Codex / Gemini CLI 的 Google Ads 技能         |
-| [**MiniAgent**](https://github.com/itallstartedwithaidea/MiniAgent)                                   | 可训练的 2600 万参数广告 AI + 14 个 MCP 服务器              |
-| [**google-ads-claudecodeskill**](https://github.com/itallstartedwithaidea/google-ads-claudecodeskill) | Claude Code 的 Google Ads 管理技能                          |
+| 项目                                                                                                  | 描述                                                |
+| ----------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| [**advertising-hub**](https://github.com/itallstartedwithaidea/advertising-hub)                       | 14 个广告平台 API、MCP 服务器和代理的一站式中心     |
+| [**google-ads-api-agent**](https://github.com/itallstartedwithaidea/google-ads-api-agent)             | 企业级 Google Ads 代理 — 28 个 API 操作，实时读写   |
+| [**google-ads-mcp**](https://github.com/itallstartedwithaidea/google-ads-mcp)                         | Google Ads API 访问的 MCP 服务器                    |
+| [**google-ads-skills**](https://github.com/itallstartedwithaidea/google-ads-skills)                   | Claude Code / Codex / Gemini CLI 的 Google Ads 技能 |
+| [**MiniAgent**](https://github.com/itallstartedwithaidea/MiniAgent)                                   | 可训练的 2600 万参数广告 AI + 14 个 MCP 服务器      |
+| [**google-ads-claudecodeskill**](https://github.com/itallstartedwithaidea/google-ads-claudecodeskill) | Claude Code 的 Google Ads 管理技能                  |
 
 ---
 
 ## 文档
 
-完整文档可在 **[Wiki](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki)** 上查阅：
+完整文档可在
+**[Wiki](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki)**
+上查阅：
 
-- [入门指南](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Getting-Started) — 安装、认证、首次运行
-- [命令参考](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Commands-Reference) — 三个命令的完整文档及示例
-- [Google Ads 代理技能](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Google-Ads-Agent-Skill) — GAQL 模式、API v22 知识、写入安全
-- [配置](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Configuration) — 设置、环境变量、模型选择
-- [相关项目](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Related-Projects) — 完整生态系统概览
+- [入门指南](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Getting-Started)
+  — 安装、认证、首次运行
+- [命令参考](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Commands-Reference)
+  — 三个命令的完整文档及示例
+- [Google Ads 代理技能](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Google-Ads-Agent-Skill)
+  — GAQL 模式、API v22 知识、写入安全
+- [配置](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Configuration)
+  — 设置、环境变量、模型选择
+- [相关项目](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Related-Projects)
+  — 完整生态系统概览
 
 ---
 
 ## 关于 Gemini CLI（上游）
 
-这是 [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) 的 fork，添加了 Google Ads 特定的扩展。
+这是 [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli)
+的 fork，添加了 Google Ads 特定的扩展。
 
-Gemini CLI 是一个开源 AI 代理，将 Gemini 的强大功能直接带入你的终端。它提供了对 Gemini 的轻量级访问，为你提供从提示到模型的最直接路径。
+Gemini
+CLI 是一个开源 AI 代理，将 Gemini 的强大功能直接带入你的终端。它提供了对 Gemini 的轻量级访问，为你提供从提示到模型的最直接路径。
 
 在[官方文档](https://geminicli.com/docs/)中了解更多关于 Gemini CLI 的信息。
 
@@ -159,7 +175,8 @@ Gemini CLI 是一个开源 AI 代理，将 Gemini 的强大功能直接带入你
 
 ## 安装
 
-参见 [Gemini CLI 安装、执行和发布](./docs/get-started/installation.md)了解推荐系统规格和详细安装指南。
+参见
+[Gemini CLI 安装、执行和发布](./docs/get-started/installation.md)了解推荐系统规格和详细安装指南。
 
 ### 快速安装
 
@@ -181,9 +198,12 @@ sudo port install gemini-cli
 
 参见[发布说明](./docs/releases.md)了解更多详情。
 
-- **Preview**：每周二 UTC 23:59 发布。安装：`npm install -g @google/gemini-cli@preview`
-- **Stable**：每周二 UTC 20:00 发布。安装：`npm install -g @google/gemini-cli@latest`
-- **Nightly**：每天 UTC 00:00 发布。安装：`npm install -g @google/gemini-cli@nightly`
+- **Preview**：每周二 UTC
+  23:59 发布。安装：`npm install -g @google/gemini-cli@preview`
+- **Stable**：每周二 UTC
+  20:00 发布。安装：`npm install -g @google/gemini-cli@latest`
+- **Nightly**：每天 UTC
+  00:00 发布。安装：`npm install -g @google/gemini-cli@nightly`
 
 ## 关键特性
 
@@ -201,24 +221,29 @@ sudo port install gemini-cli
 
 ### 高级功能
 
-- 使用内置 [Google Search](https://ai.google.dev/gemini-api/docs/grounding) 为查询提供实时信息支持
+- 使用内置 [Google Search](https://ai.google.dev/gemini-api/docs/grounding)
+  为查询提供实时信息支持
 - 对话检查点，用于保存和恢复复杂会话
 - 自定义上下文文件（GEMINI.md）以根据项目定制行为
 
 ### GitHub 集成
 
-使用 [**Gemini CLI GitHub Action**](https://github.com/google-github-actions/run-gemini-cli) 将 Gemini CLI 直接集成到 GitHub 工作流中：
+使用
+[**Gemini CLI GitHub Action**](https://github.com/google-github-actions/run-gemini-cli)
+将 Gemini CLI 直接集成到 GitHub 工作流中：
 
 - **Pull Request 审查**：具有上下文反馈和建议的自动化代码审查
 - **Issue 分类**：基于内容分析的 GitHub Issue 自动标记和优先级排序
-- **按需协助**：在 Issue 和 Pull Request 中提及 `@gemini-cli` 获取调试、解释或任务委派帮助
+- **按需协助**：在 Issue 和 Pull Request 中提及 `@gemini-cli`
+  获取调试、解释或任务委派帮助
 - **自定义工作流**：构建适合团队需求的自动化、定时和按需工作流
 
 ## 认证选项
 
 ### 选项 1：使用 Google 登录（OAuth）
 
-个人开发者和 Gemini Code Assist 许可证持有者的最佳选择。免费：60 次请求/分钟，1,000 次请求/天。
+个人开发者和 Gemini Code
+Assist 许可证持有者的最佳选择。免费：60 次请求/分钟，1,000 次请求/天。
 
 ```bash
 gemini
@@ -245,15 +270,25 @@ gemini
 
 ## 文档链接
 
-- [**快速入门指南**](./docs/get-started/index.md) | [**认证设置**](./docs/get-started/authentication.md) | [**配置指南**](./docs/reference/configuration.md)
-- [**命令参考**](./docs/reference/commands.md) | [**自定义命令**](./docs/cli/custom-commands.md) | [**上下文文件**](./docs/cli/gemini-md.md)
-- [**内置工具**](./docs/reference/tools.md) | [**MCP 服务器集成**](./docs/tools/mcp-server.md) | [**自定义扩展**](./docs/extensions/index.md)
-- [**无头模式**](./docs/cli/headless.md) | [**架构概览**](./docs/architecture.md) | [**沙箱与安全**](./docs/cli/sandbox.md)
-- [**故障排除**](./docs/resources/troubleshooting.md) | [**FAQ**](./docs/resources/faq.md)
+- [**快速入门指南**](./docs/get-started/index.md) |
+  [**认证设置**](./docs/get-started/authentication.md) |
+  [**配置指南**](./docs/reference/configuration.md)
+- [**命令参考**](./docs/reference/commands.md) |
+  [**自定义命令**](./docs/cli/custom-commands.md) |
+  [**上下文文件**](./docs/cli/gemini-md.md)
+- [**内置工具**](./docs/reference/tools.md) |
+  [**MCP 服务器集成**](./docs/tools/mcp-server.md) |
+  [**自定义扩展**](./docs/extensions/index.md)
+- [**无头模式**](./docs/cli/headless.md) |
+  [**架构概览**](./docs/architecture.md) |
+  [**沙箱与安全**](./docs/cli/sandbox.md)
+- [**故障排除**](./docs/resources/troubleshooting.md) |
+  [**FAQ**](./docs/resources/faq.md)
 
 ## 贡献
 
-欢迎贡献！Gemini CLI 是完全开源的（Apache 2.0）。参见我们的[贡献指南](./CONTRIBUTING.md)。
+欢迎贡献！Gemini CLI 是完全开源的（Apache
+2.0）。参见我们的[贡献指南](./CONTRIBUTING.md)。
 
 ## 法律声明
 
@@ -265,5 +300,5 @@ gemini
 
 <p align="center">
   上游：由 Google 和开源社区用 ❤️ 构建<br>
-  Google Ads 扩展由 <a href="https://github.com/itallstartedwithaidea">John Williams</a> 开发 — Team Lead, Paid Media @ Seer Interactive | <a href="https://googleadsagent.ai">googleadsagent.ai</a>
+  Google Ads 扩展由 <a href="https://github.com/itallstartedwithaidea">John Williams</a> 开发 — Team Lead, Paid Media @ Seer Interactive | <a href="https://ahmeego.com">ahmeego.com</a>
 </p>

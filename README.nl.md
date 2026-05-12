@@ -1,40 +1,47 @@
 # Gemini CLI + Google Ads Agent
 
-[English](README.md) | [Français](README.fr.md) | [Español](README.es.md) | [中文](README.zh.md) | [Nederlands](README.nl.md) | [Русский](README.ru.md) | [한국어](README.ko.md)
+[English](README.md) | [Français](README.fr.md) | [Español](README.es.md) |
+[中文](README.zh.md) | [Nederlands](README.nl.md) | [Русский](README.ru.md) |
+[한국어](README.ko.md)
 
 > **Open-source Google Ads-beheercommando's en AI-agentvaardigheden voor
-> [Gemini CLI](https://github.com/google-gemini/gemini-cli).** Analyseer campagneprestaties,
-> audit accounts, optimaliseer PPC-uitgaven en genereer GAQL-queries — allemaal vanuit je terminal.
+> [Gemini CLI](https://github.com/google-gemini/gemini-cli).** Analyseer
+> campagneprestaties, audit accounts, optimaliseer PPC-uitgaven en genereer
+> GAQL-queries — allemaal vanuit je terminal.
 
 [![License](https://img.shields.io/github/license/google-gemini/gemini-cli)](https://github.com/google-gemini/gemini-cli/blob/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@google/gemini-cli)](https://www.npmjs.com/package/@google/gemini-cli)
 [![Wiki](https://img.shields.io/badge/docs-Wiki-blue)](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki)
 [![Advertising Hub](https://img.shields.io/badge/ecosystem-Advertising%20Hub-orange)](https://github.com/itallstartedwithaidea/advertising-hub)
-[![googleadsagent.ai](https://img.shields.io/badge/site-googleadsagent.ai-green)](https://googleadsagent.ai)
+[![ahmeego.com](https://img.shields.io/badge/site-ahmeego.com-green)](https://ahmeego.com)
 
-**Onderdeel van het [Advertising Hub](https://github.com/itallstartedwithaidea/advertising-hub) ecosysteem** — 14 advertentieplatform-API's, 25+ AI-agents, MCP-servers |
-[googleadsagent.ai](https://googleadsagent.ai) |
+**Onderdeel van het
+[Advertising Hub](https://github.com/itallstartedwithaidea/advertising-hub)
+ecosysteem** — 14 advertentieplatform-API's, 25+ AI-agents, MCP-servers |
+[ahmeego.com](https://ahmeego.com) |
 [MiniAgent](https://github.com/itallstartedwithaidea/MiniAgent)
 
 ---
 
 ## Welk hulpmiddel heb je nodig?
 
-| Ik gebruik...                    | Dit installeren                                                                                                                                             | Insteltijd |
-| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| **Gemini CLI** (terminal)        | [google-ads-gemini-extension](https://github.com/itallstartedwithaidea/google-ads-gemini-extension)                                                         | ~15 min    |
-| **Claude** (Desktop of Code)     | [google-ads-skills](https://github.com/itallstartedwithaidea/google-ads-skills) + [google-ads-mcp](https://github.com/itallstartedwithaidea/google-ads-mcp) | ~15 min    |
-| **Cursor / Windsurf / Ander**    | [google-ads-mcp](https://github.com/itallstartedwithaidea/google-ads-mcp) (Python, 29 tools)                                                                | ~15 min    |
-| **Ik wil het gewoon beheerd**    | [googleadsagent.ai](https://googleadsagent.ai) — geen setup nodig                                                                                           | 0 min      |
+| Ik gebruik...                 | Dit installeren                                                                                                                                             | Insteltijd |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| **Gemini CLI** (terminal)     | [google-ads-gemini-extension](https://github.com/itallstartedwithaidea/google-ads-gemini-extension)                                                         | ~15 min    |
+| **Claude** (Desktop of Code)  | [google-ads-skills](https://github.com/itallstartedwithaidea/google-ads-skills) + [google-ads-mcp](https://github.com/itallstartedwithaidea/google-ads-mcp) | ~15 min    |
+| **Cursor / Windsurf / Ander** | [google-ads-mcp](https://github.com/itallstartedwithaidea/google-ads-mcp) (Python, 29 tools)                                                                | ~15 min    |
+| **Ik wil het gewoon beheerd** | [ahmeego.com](https://ahmeego.com) — geen setup nodig                                                                                                       | 0 min      |
 
 > **Stapsgewijze installatiegids met screenshots:**
-> **[googleadsagent.ai/setup](https://googleadsagent.ai/setup/)** — behandelt elk pad, elke credential, elke valkuil.
+> **[ahmeego.com/setup](https://ahmeego.com/setup/)** — behandelt elk pad, elke
+> credential, elke valkuil.
 
 ---
 
 ## Google Ads-commando's
 
-Deze fork breidt Gemini CLI uit met drie Google Ads slash-commando's en een domeinspecifieke agentvaardigheid.
+Deze fork breidt Gemini CLI uit met drie Google Ads slash-commando's en een
+domeinspecifieke agentvaardigheid.
 
 ### `/google-ads-analyze` — Campagneprestatie-analyse
 
@@ -66,16 +73,21 @@ Dekt 7 auditgebieden met ernstniveaus (Kritiek / Hoog / Gemiddeld / Laag):
 
 - Identificeert de top 3-5 optimalisatiekansen met de hoogste impact
 - Prioriteert op inspanning vs. impact met risiconiveaus
-- Behandelt verspilde uitgaven, biedefficiëntie, creative-vermoeidheid en targetinglacunes
+- Behandelt verspilde uitgaven, biedefficiëntie, creative-vermoeidheid en
+  targetinglacunes
 
 ### Google Ads Agent-vaardigheid
 
-De meegeleverde vaardigheid (`.gemini/skills/google-ads-agent/`) wordt automatisch geactiveerd voor elke advertentiegerelateerde vraag. Het biedt:
+De meegeleverde vaardigheid (`.gemini/skills/google-ads-agent/`) wordt
+automatisch geactiveerd voor elke advertentiegerelateerde vraag. Het biedt:
 
-- **GAQL-expertise** — kent Google Ads Query Language-syntaxis, veelvoorkomende patronen en kostenconversie naar micro-eenheden
-- **API v22-kennis** — huidige API-versie, authenticatiepatronen, snelheidslimieten
+- **GAQL-expertise** — kent Google Ads Query Language-syntaxis, veelvoorkomende
+  patronen en kostenconversie naar micro-eenheden
+- **API v22-kennis** — huidige API-versie, authenticatiepatronen,
+  snelheidslimieten
 - **Campagne-analyse** — trends, anomalieën, onderpresteerders, budgetallocatie
-- **Schrijfveiligheid** — presenteert altijd voorgestelde wijzigingen vóór uitvoering
+- **Schrijfveiligheid** — presenteert altijd voorgestelde wijzigingen vóór
+  uitvoering
 
 ## Snelstart — Ik wil het gewoon gebruiken
 
@@ -96,7 +108,9 @@ gemini
 > Show me my Google Ads accounts
 ```
 
-Je hebt 5 credentialwaarden nodig van Google Ads, Google Cloud Console en OAuth Playground. De **[volledige installatiegids](https://googleadsagent.ai/setup/)** begeleidt je bij elke stap met screenshots.
+Je hebt 5 credentialwaarden nodig van Google Ads, Google Cloud Console en OAuth
+Playground. De **[volledige installatiegids](https://ahmeego.com/setup/)**
+begeleidt je bij elke stap met screenshots.
 
 ### Snelstart — Ik wil bijdragen / ontwikkelen
 
@@ -130,34 +144,50 @@ cp -r gemini-cli-googleadsagent/.gemini/skills/google-ads-agent/ your-project/.g
 
 ## Documentatie
 
-Volledige documentatie is beschikbaar op de **[Wiki](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki)**:
+Volledige documentatie is beschikbaar op de
+**[Wiki](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki)**:
 
-- [Aan de slag](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Getting-Started) — Installatie, authenticatie, eerste run
-- [Commandoreferentie](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Commands-Reference) — Volledige docs voor alle drie de commando's met voorbeelden
-- [Google Ads Agent-vaardigheid](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Google-Ads-Agent-Skill) — GAQL-patronen, API v22-kennis, schrijfveiligheid
-- [Configuratie](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Configuration) — Instellingen, omgevingsvariabelen, modelselectie
-- [Gerelateerde projecten](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Related-Projects) — Volledig ecosysteemoverzicht
+- [Aan de slag](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Getting-Started)
+  — Installatie, authenticatie, eerste run
+- [Commandoreferentie](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Commands-Reference)
+  — Volledige docs voor alle drie de commando's met voorbeelden
+- [Google Ads Agent-vaardigheid](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Google-Ads-Agent-Skill)
+  — GAQL-patronen, API v22-kennis, schrijfveiligheid
+- [Configuratie](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Configuration)
+  — Instellingen, omgevingsvariabelen, modelselectie
+- [Gerelateerde projecten](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki/Related-Projects)
+  — Volledig ecosysteemoverzicht
 
 ---
 
 ## Over Gemini CLI (upstream)
 
-Dit is een fork van [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) met Google Ads-specifieke extensies.
+Dit is een fork van
+[google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) met
+Google Ads-specifieke extensies.
 
-Gemini CLI is een open-source AI-agent die de kracht van Gemini direct naar je terminal brengt. Leer alles over Gemini CLI in de [officiële documentatie](https://geminicli.com/docs/).
+Gemini CLI is een open-source AI-agent die de kracht van Gemini direct naar je
+terminal brengt. Leer alles over Gemini CLI in de
+[officiële documentatie](https://geminicli.com/docs/).
 
 ## Waarom Gemini CLI?
 
-- **Gratis tier**: 60 verzoeken/min en 1.000 verzoeken/dag met een persoonlijk Google-account.
-- **Krachtige Gemini 3-modellen**: Verbeterd redeneren en 1M-token contextvenster.
-- **Ingebouwde tools**: Google Search, bestandsoperaties, shell-commando's, web-ophaling.
-- **Uitbreidbaar**: MCP-ondersteuning (Model Context Protocol) voor aangepaste integraties.
-- **Terminal-first**: Ontworpen voor ontwikkelaars die in de commandoregel leven.
+- **Gratis tier**: 60 verzoeken/min en 1.000 verzoeken/dag met een persoonlijk
+  Google-account.
+- **Krachtige Gemini 3-modellen**: Verbeterd redeneren en 1M-token
+  contextvenster.
+- **Ingebouwde tools**: Google Search, bestandsoperaties, shell-commando's,
+  web-ophaling.
+- **Uitbreidbaar**: MCP-ondersteuning (Model Context Protocol) voor aangepaste
+  integraties.
+- **Terminal-first**: Ontworpen voor ontwikkelaars die in de commandoregel
+  leven.
 - **Open source**: Apache 2.0-licentie.
 
 ## Installatie
 
-Zie [Gemini CLI installatie, uitvoering en releases](./docs/get-started/installation.md).
+Zie
+[Gemini CLI installatie, uitvoering en releases](./docs/get-started/installation.md).
 
 ### Snelle installatie
 
@@ -170,21 +200,25 @@ brew install gemini-cli
 ## Belangrijke functies
 
 ### Code begrijpen en genereren
+
 - Grote codebases bevragen en bewerken
 - Nieuwe apps genereren vanuit PDF's, afbeeldingen of schetsen
 - Problemen debuggen met natuurlijke taal
 
 ### Automatisering en integratie
+
 - Operationele taken automatiseren
 - MCP-servers gebruiken voor extra mogelijkheden
 - Non-interactief uitvoeren in scripts
 
 ### Geavanceerde mogelijkheden
+
 - Queries verankeren met ingebouwde Google Search
 - Conversatiecheckpoints om complexe sessies op te slaan en te hervatten
 - Aangepaste contextbestanden (GEMINI.md)
 
 ### GitHub-integratie
+
 - Pull Request-reviews, issue-triage, on-demand hulp, aangepaste workflows
 
 ## Authenticatie-opties
@@ -195,10 +229,16 @@ brew install gemini-cli
 
 ## Documentatielinks
 
-- [Snelstartgids](./docs/get-started/index.md) | [Authenticatie](./docs/get-started/authentication.md) | [Configuratie](./docs/reference/configuration.md)
-- [Commandoreferentie](./docs/reference/commands.md) | [Aangepaste commando's](./docs/cli/custom-commands.md) | [GEMINI.md](./docs/cli/gemini-md.md)
-- [Ingebouwde tools](./docs/reference/tools.md) | [MCP-serverintegratie](./docs/tools/mcp-server.md)
-- [Probleemoplossing](./docs/resources/troubleshooting.md) | [FAQ](./docs/resources/faq.md)
+- [Snelstartgids](./docs/get-started/index.md) |
+  [Authenticatie](./docs/get-started/authentication.md) |
+  [Configuratie](./docs/reference/configuration.md)
+- [Commandoreferentie](./docs/reference/commands.md) |
+  [Aangepaste commando's](./docs/cli/custom-commands.md) |
+  [GEMINI.md](./docs/cli/gemini-md.md)
+- [Ingebouwde tools](./docs/reference/tools.md) |
+  [MCP-serverintegratie](./docs/tools/mcp-server.md)
+- [Probleemoplossing](./docs/resources/troubleshooting.md) |
+  [FAQ](./docs/resources/faq.md)
 
 ## Bijdragen
 
@@ -207,12 +247,13 @@ Bijdragen zijn welkom! Zie onze [Bijdragegids](./CONTRIBUTING.md).
 ## Juridisch
 
 - **Licentie**: [Apache License 2.0](LICENSE)
-- **Servicevoorwaarden**: [Voorwaarden en privacy](./docs/resources/tos-privacy.md)
+- **Servicevoorwaarden**:
+  [Voorwaarden en privacy](./docs/resources/tos-privacy.md)
 - **Beveiliging**: [Beveiligingsbeleid](SECURITY.md)
 
 ---
 
 <p align="center">
   Upstream: Gebouwd met ❤️ door Google en de open-sourcecommunity<br>
-  Google Ads-extensies door <a href="https://github.com/itallstartedwithaidea">John Williams</a> — Team Lead, Paid Media @ Seer Interactive | <a href="https://googleadsagent.ai">googleadsagent.ai</a>
+  Google Ads-extensies door <a href="https://github.com/itallstartedwithaidea">John Williams</a> — Team Lead, Paid Media @ Seer Interactive | <a href="https://ahmeego.com">ahmeego.com</a>
 </p>

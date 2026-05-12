@@ -9,12 +9,12 @@
 [![Version](https://img.shields.io/npm/v/@google/gemini-cli)](https://www.npmjs.com/package/@google/gemini-cli)
 [![Wiki](https://img.shields.io/badge/docs-Wiki-blue)](https://github.com/itallstartedwithaidea/gemini-cli-googleadsagent/wiki)
 [![Advertising Hub](https://img.shields.io/badge/ecosystem-Advertising%20Hub-orange)](https://github.com/itallstartedwithaidea/advertising-hub)
-[![googleadsagent.ai](https://img.shields.io/badge/site-googleadsagent.ai-green)](https://googleadsagent.ai)
+[![ahmeego.com](https://img.shields.io/badge/site-ahmeego.com-green)](https://ahmeego.com)
 
 **Part of the
 [Advertising Hub](https://github.com/itallstartedwithaidea/advertising-hub)
 ecosystem** — 14 ad platform APIs, 25+ AI agents, MCP servers |
-[googleadsagent.ai](https://googleadsagent.ai) |
+[ahmeego.com](https://ahmeego.com) |
 [MiniAgent](https://github.com/itallstartedwithaidea/MiniAgent)
 
 **Keywords:** Google Ads API, Google Ads automation, PPC management, campaign
@@ -35,11 +35,11 @@ gemini extensions install https://github.com/itallstartedwithaidea/google-ads-ge
 ```
 
 **v2.4.1 ships zero-setup sign-in.** After installing, run `/google-ads:login` —
-your browser opens to [googleadsagent.ai](https://googleadsagent.ai), you pick
-any Google account with Google Ads access, approve, and you're signed in. No
-Cloud Console setup, no client IDs, no secrets ever touch the CLI. The Google
-refresh token stays encrypted on the site; only an opaque session id is stored
-locally (OS keychain when available). Multiple identities supported with
+your browser opens to [ahmeego.com](https://ahmeego.com), you pick any Google
+account with Google Ads access, approve, and you're signed in. No Cloud Console
+setup, no client IDs, no secrets ever touch the CLI. The Google refresh token
+stays encrypted on the site; only an opaque session id is stored locally (OS
+keychain when available). Multiple identities supported with
 `/google-ads:status`, `/google-ads:switch <email>`, `/google-ads:logout`.
 
 Full details in the
@@ -49,11 +49,11 @@ and
 
 ### Troubleshooting sign-in
 
-| Symptom                                                                             | Fix                                                                                                                                                          |
-| ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `Error 400: redirect_uri_mismatch` with `http://127.0.0.1:<port>/callback`          | Your Gemini session started before v2.4 landed on disk. Run `/quit`, then `gemini` again — the MCP server reloads with the proxy flow.                       |
-| `Sign-in timed out after 120s`                                                      | Browser didn't open or you didn't complete consent in time. Re-run `/google-ads:login` — the CLI also prints the URL you can paste manually.                 |
-| `Access blocked: This app's request is invalid` with a `googleadsagent.ai` redirect | Your Google account isn't on the OAuth consent screen's "Test users" list for this project. Ask the project owner to add you, or use a pre-approved account. |
+| Symptom                                                                       | Fix                                                                                                                                                          |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `Error 400: redirect_uri_mismatch` with `http://127.0.0.1:<port>/callback`    | Your Gemini session started before v2.4 landed on disk. Run `/quit`, then `gemini` again — the MCP server reloads with the proxy flow.                       |
+| `Sign-in timed out after 120s`                                                | Browser didn't open or you didn't complete consent in time. Re-run `/google-ads:login` — the CLI also prints the URL you can paste manually.                 |
+| `Access blocked: This app's request is invalid` with a `ahmeego.com` redirect | Your Google account isn't on the OAuth consent screen's "Test users" list for this project. Ask the project owner to add you, or use a pre-approved account. |
 
 ---
 
@@ -550,5 +550,5 @@ instructions.
 
 <p align="center">
   Upstream: Built with ❤️ by Google and the open source community<br>
-  Google Ads extensions by <a href="https://github.com/itallstartedwithaidea">John Williams</a> — Team Lead, Paid Media @ Seer Interactive | <a href="https://googleadsagent.ai">googleadsagent.ai</a>
+  Google Ads extensions by <a href="https://github.com/itallstartedwithaidea">John Williams</a> — Team Lead, Paid Media @ Seer Interactive | <a href="https://ahmeego.com">ahmeego.com</a>
 </p>
