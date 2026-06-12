@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/itallstartedwithaidea-gemini-cli-googleadsagent-badge.png)](https://mseep.ai/app/itallstartedwithaidea-gemini-cli-googleadsagent)
+
 # Gemini CLI + Google Ads Agent
 
 > **Open-source Google Ads management commands and AI agent skills for
